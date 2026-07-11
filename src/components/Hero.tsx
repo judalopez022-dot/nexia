@@ -320,9 +320,11 @@ export default function Hero() {
             relative
             min-h-[360px]
             min-w-0
-            overflow-visible
+            overflow-hidden
             md:h-full
             md:min-h-0
+            md:rounded-none
+            md:bg-transparent
           "
         >
           <motion.div
@@ -380,8 +382,8 @@ export default function Hero() {
                 sizes="(max-width: 768px) 100vw, 55vw"
                 className="
                   object-contain
-                  scale-110
-                  drop-shadow-[0_35px_45px_rgba(0,0,0,0.20)]
+                  scale-100
+                  drop-shadow-[0_35px_45px_rgba(0,0,0,0.18)]
                   md:scale-[1.25]
                   lg:scale-[1.45]
                 "
