@@ -1,11 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import SalaryHighlight from "@/components/SalaryHighlight";
 import Benefits from "@/components/Benefits";
 import Company from "@/components/Company";
 import Requirements from "@/components/Requirements";
 import Apply from "@/components/Apply";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -14,6 +16,10 @@ export default function Home() {
 
       <Reveal onLoad>
         <Hero />
+      </Reveal>
+
+      <Reveal delay={0.05}>
+        <SalaryHighlight />
       </Reveal>
 
       <Reveal delay={0.08}>
@@ -33,6 +39,8 @@ export default function Home() {
       </Reveal>
 
       <Footer />
+
+      <BackToTop />
     </main>
   );
 }
