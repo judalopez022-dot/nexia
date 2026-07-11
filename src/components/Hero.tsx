@@ -373,7 +373,7 @@ export default function Hero() {
               "
             >
               <Image
-                src="/images/autobus-hero.png"
+                src="/images/autobus-nexia.png"
                 alt="Ilustración de autobús urbano"
                 fill
                 priority
