@@ -53,12 +53,14 @@ export default function Hero() {
           z-10
           mx-auto
           grid
-          h-full
+          h-auto
+          md:h-full
           max-w-[1450px]
           items-center
           gap-2
           px-6
-          py-10
+          py-8
+          md:py-10
           md:grid-cols-[45%_55%]
           md:px-10
           lg:px-12
@@ -318,10 +320,10 @@ export default function Hero() {
 <div
   className="
     relative
-    min-h-[260px]
+    hidden
+    md:block
+    min-h-[360px]
     min-w-0
-    md:h-full
-    md:min-h-0
   "
 >
   <motion.div
