@@ -34,9 +34,8 @@ export const metadata = {
   },
 
   icons: {
-    icon: "/nexia-logo.png",
-    shortcut: "/nexia-logo.png",
-    apple: "/nexia-logo.png",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
