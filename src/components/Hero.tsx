@@ -318,15 +318,11 @@ export default function Hero() {
         <div
           className="
             relative
-            min-h-[360px]
+            min-h-[300px]
             min-w-0
             overflow-hidden
-            rounded-t-[40px]
-            bg-white
             md:h-full
             md:min-h-0
-            md:rounded-none
-            md:bg-transparent
           "
         >
           <motion.div
@@ -351,7 +347,10 @@ export default function Hero() {
               flex
               items-center
               justify-center
+              rounded-[35px]
+              bg-white
               md:translate-x-8
+              md:bg-transparent
               lg:translate-x-16
             "
           >
@@ -369,9 +368,9 @@ export default function Hero() {
               }}
               className="
                 relative
-                h-[420px]
+                h-[300px]
                 w-full
-                sm:h-[500px]
+                sm:h-[420px]
                 md:h-[640px]
                 lg:h-[720px]
               "
@@ -384,8 +383,8 @@ export default function Hero() {
                 sizes="(max-width: 768px) 100vw, 55vw"
                 className="
                   object-contain
-                  scale-95
-                  drop-shadow-[0_35px_45px_rgba(0,0,0,0.18)]
+                  scale-90
+                  drop-shadow-[0_30px_40px_rgba(0,0,0,0.16)]
                   md:scale-[1.25]
                   lg:scale-[1.45]
                 "
