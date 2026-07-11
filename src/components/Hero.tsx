@@ -322,12 +322,12 @@ export default function Hero() {
           <motion.div
             initial={{
               opacity: 0,
-              x: -60,
+              x: 80,
               scale: 0.85,
             }}
             whileInView={{
               opacity: 1,
-              x: 20,
+              x: 0,
               scale: 1,
             }}
             viewport={{
@@ -339,9 +339,9 @@ export default function Hero() {
               ease: [0.22, 1, 0.36, 1],
             }}
             className="
-              mt-3
-              flex
-              justify-end
+              absolute
+              right-2
+              top-[520px]
               md:hidden
             "
           >
