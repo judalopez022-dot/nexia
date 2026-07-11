@@ -1,7 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import BusTransition from "@/components/BusTransition";
-import SalaryHighlight from "@/components/SalaryHighlight";
 import Benefits from "@/components/Benefits";
 import Company from "@/components/Company";
 import Requirements from "@/components/Requirements";
@@ -16,12 +14,6 @@ export default function Home() {
 
       <Reveal onLoad>
         <Hero />
-      </Reveal>
-
-      <BusTransition />
-
-      <Reveal delay={0.05}>
-        <SalaryHighlight />
       </Reveal>
 
       <Reveal delay={0.08}>

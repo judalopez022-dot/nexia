@@ -18,7 +18,7 @@ export default function Hero() {
         overflow-hidden
         bg-[#081C3A]
         text-white
-        pb-6
+        pb-4
         lg:h-[calc(100svh-90px)]
         lg:min-h-[570px]
         lg:max-h-[760px]
@@ -322,24 +322,24 @@ export default function Hero() {
           <motion.div
             initial={{
               opacity: 0,
-              x: -40,
+              x: -60,
               scale: 0.85,
             }}
             whileInView={{
               opacity: 1,
-              x: 40,
+              x: 20,
               scale: 1,
             }}
             viewport={{
               once: true,
-              amount: 0.5,
+              amount: 0.6,
             }}
             transition={{
-              duration: 1,
+              duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
             }}
             className="
-              mt-8
+              mt-3
               flex
               justify-end
               md:hidden
@@ -347,8 +347,8 @@ export default function Hero() {
           >
             <div
               className="
-                h-[120px]
-                w-[180px]
+                h-[95px]
+                w-[150px]
               "
             >
               <BusIllustration />
