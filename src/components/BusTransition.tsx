@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import BusIllustration from "@/components/BusIllustration";
 
 export default function BusTransition() {
   const reducirMovimiento = useReducedMotion();
@@ -11,7 +11,7 @@ export default function BusTransition() {
       className="
         relative
         flex
-        h-[180px]
+        h-[170px]
         items-center
         justify-center
         overflow-hidden
@@ -21,13 +21,13 @@ export default function BusTransition() {
     >
       <motion.div
         initial={{
-          x: reducirMovimiento ? 0 : -120,
           opacity: 0,
+          x: reducirMovimiento ? 0 : -120,
           scale: 0.8,
         }}
         whileInView={{
-          x: reducirMovimiento ? 0 : 80,
           opacity: 1,
+          x: reducirMovimiento ? 0 : 60,
           scale: 1,
         }}
         viewport={{
@@ -39,20 +39,11 @@ export default function BusTransition() {
           ease: [0.22, 1, 0.36, 1],
         }}
         className="
-          relative
-          h-[160px]
-          w-[280px]
+          h-[150px]
+          w-[260px]
         "
       >
-        <Image
-          src="/images/autobus-nexia.png"
-          alt="Autobús urbano"
-          fill
-          sizes="280px"
-          className="
-            object-contain
-          "
-        />
+        <BusIllustration />
       </motion.div>
     </section>
   );
