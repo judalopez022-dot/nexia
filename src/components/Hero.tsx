@@ -321,6 +321,8 @@ export default function Hero() {
             min-h-[360px]
             min-w-0
             overflow-hidden
+            rounded-t-[40px]
+            bg-white
             md:h-full
             md:min-h-0
             md:rounded-none
@@ -382,7 +384,7 @@ export default function Hero() {
                 sizes="(max-width: 768px) 100vw, 55vw"
                 className="
                   object-contain
-                  scale-100
+                  scale-95
                   drop-shadow-[0_35px_45px_rgba(0,0,0,0.18)]
                   md:scale-[1.25]
                   lg:scale-[1.45]
