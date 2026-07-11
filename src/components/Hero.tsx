@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import BusIllustration from "@/components/BusIllustration";
 
 export default function Hero() {
   const reducirMovimiento = useReducedMotion();
@@ -17,6 +18,7 @@ export default function Hero() {
         overflow-hidden
         bg-[#081C3A]
         text-white
+        pb-6
         lg:h-[calc(100svh-90px)]
         lg:min-h-[570px]
         lg:max-h-[760px]
@@ -316,6 +318,42 @@ export default function Hero() {
           </motion.div>
         </div>
 
+          {/* Autobús animado móvil */}
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: -40,
+              scale: 0.85,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 40,
+              scale: 1,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.5,
+            }}
+            transition={{
+              duration: 1,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="
+              mt-8
+              flex
+              justify-end
+              md:hidden
+            "
+          >
+            <div
+              className="
+                h-[120px]
+                w-[180px]
+              "
+            >
+              <BusIllustration />
+            </div>
+          </motion.div>
       {/* Imagen */}
 <div
   className="
