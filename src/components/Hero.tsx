@@ -314,84 +314,95 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Imagen */}
-        <div
-          className="
-            relative
-            min-h-[300px]
-            min-w-0
-            overflow-hidden
-            md:h-full
-            md:min-h-0
-          "
-        >
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: movimientoX,
-              scale: reducirMovimiento ? 1 : 0.94,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-              scale: 1,
-            }}
-            transition={{
-              duration: 1,
-              delay: 0.25,
-              ease: [0.22, 1, 0.36, 1],
-            }}
-            className="
-              absolute
-              inset-0
-              flex
-              items-center
-              justify-center
-              rounded-[35px]
-              bg-white
-              md:translate-x-8
-              md:bg-transparent
-              lg:translate-x-16
-            "
-          >
-            <motion.div
-              whileHover={
-                reducirMovimiento
-                  ? {}
-                  : {
-                      y: -8,
-                      rotate: -0.6,
-                    }
-              }
-              transition={{
-                duration: 0.35,
-              }}
-              className="
-                relative
-                h-[300px]
-                w-full
-                sm:h-[420px]
-                md:h-[640px]
-                lg:h-[720px]
-              "
-            >
-              <Image
-                src="/images/autobus-nexia.png"
-                alt="Ilustración de autobús urbano"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 55vw"
-                className="
-                  object-contain
-                  scale-90
-                  drop-shadow-[0_30px_40px_rgba(0,0,0,0.16)]
-                  md:scale-[1.25]
-                  lg:scale-[1.45]
-                "
-              />
-            </motion.div>
-          </motion.div>
-        </div>
+      {/* Imagen */}
+<div
+  className="
+    relative
+    min-h-[260px]
+    min-w-0
+    md:h-full
+    md:min-h-0
+  "
+>
+  <motion.div
+    initial={{
+      opacity: 0,
+      x: movimientoX,
+      scale: reducirMovimiento ? 1 : 0.94,
+    }}
+    animate={{
+      opacity: 1,
+      x: 0,
+      scale: 1,
+    }}
+    transition={{
+      duration: 1,
+      delay: 0.25,
+      ease: [0.22, 1, 0.36, 1],
+    }}
+    className="
+      absolute
+      inset-0
+      flex
+      items-center
+      justify-center
+      md:translate-x-8
+      lg:translate-x-16
+    "
+  >
+
+    <div
+      className="
+        absolute
+        h-[260px]
+        w-[90%]
+        rounded-full
+        bg-white
+        blur-2xl
+        opacity-90
+        md:hidden
+      "
+    />
+
+    <motion.div
+      whileHover={
+        reducirMovimiento
+          ? {}
+          : {
+              y: -8,
+              rotate: -0.6,
+            }
+      }
+      transition={{
+        duration: 0.35,
+      }}
+      className="
+        relative
+        h-[280px]
+        w-full
+        sm:h-[360px]
+        md:h-[640px]
+        lg:h-[720px]
+      "
+    >
+      <Image
+        src="/images/autobus-nexia.png"
+        alt="Ilustración de autobús urbano"
+        fill
+        priority
+        sizes="(max-width: 768px) 100vw, 55vw"
+        className="
+          object-contain
+          scale-105
+          drop-shadow-[0_30px_40px_rgba(0,0,0,0.18)]
+          md:scale-[1.25]
+          lg:scale-[1.45]
+        "
+      />
+    </motion.div>
+
+  </motion.div>
+</div>
       </div>
     </section>
   );
